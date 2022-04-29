@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.jorgemartinezruiz.gui.VistaAdministrador">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FormLayout">
+    <rowspec value="center:445px:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:714px:noGrow"/>
+    <constraints>
+      <xy x="20" y="20" width="714" height="456"/>
+    </constraints>
+    <properties>
+      <enabled value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="bba02" binding="tabbedPane">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="29de1" binding="panelEmpleadosAdmin" layout-manager="FormLayout">
+            <rowspec value="center:33px:noGrow"/>
+            <rowspec value="top:5dlu:noGrow"/>
+            <rowspec value="center:33px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:33px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:30px:noGrow"/>
+            <rowspec value="top:90dlu:noGrow"/>
+            <rowspec value="top:58px:grow"/>
+            <rowspec value="top:5dlu:noGrow"/>
+            <rowspec value="center:53px:noGrow"/>
+            <rowspec value="top:5dlu:noGrow"/>
+            <rowspec value="center:30px:noGrow"/>
+            <colspec value="fill:100px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:161px:noGrow"/>
+            <colspec value="left:5dlu:noGrow"/>
+            <colspec value="fill:360px:noGrow"/>
+            <colspec value="left:10dlu:noGrow"/>
+            <colspec value="fill:30px:noGrow"/>
+            <constraints>
+              <tabbedpane title="Empleados"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="3640e" class="javax.swing.JButton" binding="buttonEliminarEmpleadoAdmin">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="eliminarEmpleado"/>
+                  <text value="Eliminar"/>
+                </properties>
+              </component>
+              <component id="27f5a" class="javax.swing.JButton" binding="buttonModificarEmpleadoAdmin">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="modificarEmpleado"/>
+                  <text value="Modificar"/>
+                </properties>
+              </component>
+              <component id="f8579" class="javax.swing.JButton" binding="buttonAnyadirEmpleadoAdmin">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="anyadirEmpleadoAdmin"/>
+                  <text value="Añadir"/>
+                </properties>
+              </component>
+              <component id="da1e1" class="javax.swing.JButton" binding="buttonMostrarEmpleadosAdmin">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="mostrarEmpleadosAdmin"/>
+                  <text value="Mostrar"/>
+                </properties>
+              </component>
+              <component id="3a7b1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <text value="Buscar Por:"/>
+                </properties>
+              </component>
+              <component id="1241f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <text value="Valor :"/>
+                </properties>
+              </component>
+              <component id="26ee5" class="javax.swing.JComboBox" binding="comboBuscarEmpleado">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="6068" class="javax.swing.JTextField" binding="txtBuscarEmpleado">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="b941d" class="javax.swing.JButton" binding="buttonBuscarEmpelado">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="buttonBuscarEmpleadoAdmin"/>
+                  <text value="Buscar"/>
+                </properties>
+              </component>
+              <scrollpane id="36bdd">
+                <constraints>
+                  <grid row="7" column="2" row-span="4" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="b63e" class="javax.swing.JTable" binding="tableEmpleadosAdmin">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="f3e7" binding="panelClientesAdmin" layout-manager="FormLayout">
+            <rowspec value="top:58dlu:noGrow"/>
+            <rowspec value="center:271px:noGrow"/>
+            <rowspec value="top:61dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <colspec value="fill:318px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:318px:noGrow"/>
+            <colspec value="left:7dlu:noGrow"/>
+            <colspec value="fill:30px:noGrow"/>
+            <constraints>
+              <tabbedpane title="Clientes"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="321e5" class="javax.swing.JButton" binding="ordenarPorEdadAscendenteButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="edadAscendente"/>
+                  <text value="Ordenar por edad ascendente"/>
+                </properties>
+              </component>
+              <component id="ee756" class="javax.swing.JButton" binding="ordenarPorEdadDesdencenteButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="edadDescendente"/>
+                  <text value="Ordenar por edad desdencente"/>
+                </properties>
+              </component>
+              <scrollpane id="9138">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="bcdaf" class="javax.swing.JTable" binding="tableClientesAdmin">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="852b5" binding="panelVentasAdmin" layout-manager="FormLayout">
+            <rowspec value="center:83px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:30px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:grow"/>
+            <colspec value="fill:312px:grow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:312px:noGrow"/>
+            <colspec value="left:5dlu:noGrow"/>
+            <colspec value="fill:30px:noGrow"/>
+            <constraints>
+              <tabbedpane title="Ventas"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9fd3b" class="javax.swing.JButton" binding="ordenarPorPrecioAscendenteButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="precioAsc"/>
+                  <text value="Ordenar por precio ascendente"/>
+                </properties>
+              </component>
+              <component id="34b89" class="javax.swing.JButton" binding="ordenarPorPrecioDescendenteButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="precioDesc"/>
+                  <text value="Ordenar por precio descendente"/>
+                </properties>
+              </component>
+              <scrollpane id="7cdf4">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="b2f38" class="javax.swing.JTable" binding="tableVentasAdmin">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="64a69" binding="panelServiciosAdmin" layout-manager="FormLayout">
+            <rowspec value="center:33px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:33px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:33px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="top:39dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:21dlu:noGrow"/>
+            <rowspec value="top:72dlu:noGrow"/>
+            <rowspec value="center:30px:noGrow"/>
+            <colspec value="fill:100px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:161px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:362px:noGrow"/>
+            <colspec value="left:5dlu:noGrow"/>
+            <colspec value="fill:30px:noGrow"/>
+            <constraints>
+              <tabbedpane title="Servicios"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="77284" class="javax.swing.JButton" binding="buttonModificarServiciosAdmin">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="modificarServicio"/>
+                  <text value="Modificar"/>
+                </properties>
+              </component>
+              <component id="af448" class="javax.swing.JButton" binding="buttonAnyadirServiciosAdmin">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="anyadirServicioAdmin"/>
+                  <text value="Añadir"/>
+                </properties>
+              </component>
+              <component id="a4b60" class="javax.swing.JButton" binding="buttonEliminarServiciosAdmin">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="eliminarServicio"/>
+                  <text value="Eliminar"/>
+                </properties>
+              </component>
+              <component id="4f39e" class="javax.swing.JTextField" binding="txtBuscarServicios">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="e1d79" class="javax.swing.JComboBox" binding="comboBuscarServicios">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="de25b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <text value="Buscar Por :"/>
+                </properties>
+              </component>
+              <component id="4fb55" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <text value="Valor :"/>
+                </properties>
+              </component>
+              <component id="7d85b" class="javax.swing.JButton" binding="buttonBuscarServiciosAdmin">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="buscarServiciosAdmin"/>
+                  <text value="Buscar"/>
+                </properties>
+              </component>
+              <component id="83530" class="javax.swing.JButton" binding="buttonMostrarServicios">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="mostrarServiciosAdmin"/>
+                  <text value="Mostrar"/>
+                </properties>
+              </component>
+              <scrollpane id="cab49">
+                <constraints>
+                  <grid row="6" column="2" row-span="4" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="f150" class="javax.swing.JTable" binding="tableServiciosAdmin">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
