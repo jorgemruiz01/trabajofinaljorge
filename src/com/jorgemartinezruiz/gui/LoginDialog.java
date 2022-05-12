@@ -19,6 +19,7 @@ public class LoginDialog extends JFrame{
 
 
     JMenuItem itemSalir;
+    JMenuItem itemAyuda;
     JMenuItem itemAcercaDe;
 
     public LoginDialog() { startJFrame(); }
@@ -51,10 +52,15 @@ public class LoginDialog extends JFrame{
         JMenuBar mbBar = new JMenuBar();
         itemAcercaDe = new JMenuItem("Acerca de");
         itemAcercaDe.setActionCommand("Acerca de");
+        itemAyuda = new JMenuItem("Ayuda");
+        itemAyuda.setActionCommand("Ayuda");
         itemSalir = new JMenuItem("Salir");
         itemSalir.setActionCommand("Salir");
+
+
         menu.add(itemAcercaDe);
         menu.add(itemSalir);
+        menu.add(itemAyuda);
         mbBar.add(menu);
         mbBar.add(Box.createHorizontalGlue());
         this.setJMenuBar(mbBar);

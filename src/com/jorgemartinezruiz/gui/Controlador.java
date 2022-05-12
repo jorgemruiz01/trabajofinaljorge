@@ -60,6 +60,7 @@ public class Controlador implements ActionListener, ListSelectionListener {
     }
     private void addItemListeners(Controlador controlador) {
     }
+
     private void refrescar() {
         refrescarClientes();
         refrescarVentas();

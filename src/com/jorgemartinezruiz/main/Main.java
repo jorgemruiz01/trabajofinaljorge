@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /** *
- * @author aplicacion desarrollada por Jorge Martinez
+ * @author Aplicacion desarrollada por Jorge Martinez
  */
 
 public class Main {

@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27df4409-82d4-4fce-9e3a-020aee19b263" name="Default Changelist" comment="" />
+    <list default="true" id="27df4409-82d4-4fce-9e3a-020aee19b263" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/LoginDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/LoginDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Modelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/main/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +52,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="20hEnwCxFy9SJyhV3DfQAS02O1G" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="127" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="329" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="63" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/facturas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.hocon.settings.HoconProjectSettingsConfigurable" />
@@ -152,10 +164,26 @@
       <workItem from="1650537471043" duration="6347000" />
       <workItem from="1650561175815" duration="740000" />
       <workItem from="1650562556510" duration="10000" />
+      <workItem from="1651686931571" duration="966000" />
+      <workItem from="1651687967829" duration="4157000" />
+      <workItem from="1652338731489" duration="5132000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

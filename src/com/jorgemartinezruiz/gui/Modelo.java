@@ -458,7 +458,10 @@ public class Modelo {
         return resultado;
 
     }
-
+    /**
+     * Método para buscar un servicio pasando el nombre del servicio como parametro
+     * @return modifica la tabla con los datos pertinentes
+     */
 
     public int modificarServicio (int id, String nombre, double precio) throws SQLException {
         if (conexion==null)
@@ -484,6 +487,10 @@ public class Modelo {
 
         return resultado;
     }
+    /**
+     * Método para buscar un cliente pasando el nombre de usuario del cliente como parametro
+     * @return un resultset con los datos buscados por nombre
+     */
     ResultSet buscarCliente(String username) throws SQLException {
         String sentenciaSql = "SELECT concat(idcliente) as 'ID', " +
                 "concat(username) as 'Username' FROM clientes WHERE username=?";
@@ -494,6 +501,10 @@ public class Modelo {
         resultado = sentencia.executeQuery();
         return resultado;
     }
+    /**
+     * Método para buscar un servicio pasando el nombre del servicio como parametro
+     * @return un resultset con los datos buscados por nombre
+     */
     ResultSet buscarServicio(String nombre) throws SQLException {
         String sentenciaSql = "SELECT concat(idservicio) as 'ID', " +
                 "concat(nombre) as 'Username',concat(precio) as 'Precio' FROM servicios WHERE nombre=?";
@@ -504,6 +515,12 @@ public class Modelo {
         resultado = sentencia.executeQuery();
         return resultado;
     }
+
+    /**
+     * Método para buscar filtrando por nombre en la base de datos
+     * @return un resultset con los datos buscados por nombre
+     */
+
     ResultSet buscarPorNombre(String nombre,String idque) throws SQLException {
         String sentenciaSql = "";
         if (idque == "idcliente") {
@@ -523,6 +540,10 @@ public class Modelo {
         resultado = sentencia.executeQuery();
         return resultado;
     }
+    /**
+     * Método para buscar filtrando por id en la base de datos
+     * @return un resultset con los datos buscados por id
+     */
     ResultSet buscarPorId(int id,  String idque) throws SQLException {
         String sentenciaSql = "";
         if (idque == "idcliente") {
