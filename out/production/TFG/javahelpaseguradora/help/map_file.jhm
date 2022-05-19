@@ -1,0 +1,7 @@
+<map version="1.0">
+ <mapID target="main" url="html/main.html" />
+   <mapID target="admin" url="html/admin.html" />
+   <mapID target="cliente" url="html/cliente.html" />
+   <mapID target="empleado" url="html/empleado.html" />
+   <mapID target="login" url="html/login.html" />
+</map>

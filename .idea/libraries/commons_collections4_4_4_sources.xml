@@ -21,16 +21,24 @@
       <root url="jar://$PROJECT_DIR$/libs/jasperreports-functions-6.3.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/jasperreports-6.3.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/jasperreports-6.16.0.jar!/" />
+      <root url="jar://C:/jh2.0/javahelp/lib/jsearch.jar!/" />
+      <root url="jar://C:/jh2.0/javahelp/lib/jhbasic.jar!/" />
+      <root url="jar://C:/jh2.0/javahelp/lib/jhall.jar!/" />
+      <root url="jar://C:/jh2.0/javahelp/lib/jh.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4-javadoc.jar!/" />
+      <root url="file://C:/jh2.0/doc/api" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4-test-sources.jar!/" />
       <root url="file://$PROJECT_DIR$/libs" />
+      <root url="file://C:/jh2.0" />
+      <root url="file://C:/jh2.0/demos/src" />
     </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" />
+    <jarDirectory url="file://C:/jh2.0" recursive="false" type="SOURCES" />
     <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" type="SOURCES" />
   </library>
 </component>

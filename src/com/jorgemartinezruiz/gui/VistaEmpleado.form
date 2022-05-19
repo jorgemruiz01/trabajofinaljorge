@@ -302,16 +302,6 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="b8fbb" class="javax.swing.JButton" binding="generarFacturaButton" default-binding="true">
-                <constraints>
-                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms defaultalign-horz="false"/>
-                </constraints>
-                <properties>
-                  <actionCommand value="factura"/>
-                  <text value="Generar Factura"/>
-                </properties>
-              </component>
               <scrollpane id="db8a3">
                 <constraints>
                   <grid row="11" column="2" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -361,6 +351,16 @@
                   <forms defaultalign-horz="false"/>
                 </constraints>
                 <properties/>
+              </component>
+              <component id="1e903" class="javax.swing.JButton" binding="verVentasEnPDFButton" default-binding="true">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ventasPorEmpleado"/>
+                  <text value="Ver Ventas en PDF"/>
+                </properties>
               </component>
             </children>
           </grid>

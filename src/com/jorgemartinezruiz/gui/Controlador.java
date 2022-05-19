@@ -1,9 +1,8 @@
 package com.jorgemartinezruiz.gui;
 
-import com.jorgemartinezruiz.generarFactura.GenerarFactura;
+import com.jorgemartinezruiz.generarReporte.GenerarReporte;
 import com.jorgemartinezruiz.utilidades.Utilidadades;
 
-import javax.rmi.CORBA.Util;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -26,7 +25,7 @@ public class Controlador implements ActionListener, ListSelectionListener {
     private NuevoServicioDialog nuevoServicioDialog;
     private NuevoClienteDialog nuevoClienteDialog;
     private AcercaDeDialog acercaDeDialog;
-    private GenerarFactura generarFactura;
+    private GenerarReporte generarReporte;
 
     private Modelo modelo = new Modelo();
     private Utilidadades utilidades;
@@ -47,7 +46,7 @@ public class Controlador implements ActionListener, ListSelectionListener {
         nuevoClienteDialog = new NuevoClienteDialog();
         acercaDeDialog = new AcercaDeDialog();
 
-        generarFactura = new GenerarFactura();
+        generarReporte = new GenerarReporte();
 
         ajustes = new Ajustes();
 
@@ -92,6 +91,7 @@ public class Controlador implements ActionListener, ListSelectionListener {
         vistaAdministrador.ordenarPorPrecioDescendenteButton.addActionListener(listener);
         vistaAdministrador.itemCerrarSesion.addActionListener(listener);
         vistaAdministrador.itemAcercaDe.addActionListener(listener);
+        vistaAdministrador.mostrarEnPDFButton.addActionListener(listener);
 
         vistaEmpleado.buttonBuscarCliente.addActionListener(listener);
         vistaEmpleado.buttonBuscarServicio.addActionListener(listener);
@@ -103,7 +103,8 @@ public class Controlador implements ActionListener, ListSelectionListener {
         vistaEmpleado.itemAcercaDe.addActionListener(listener);
         vistaEmpleado.buttonRealizarVentasEmpleados.addActionListener(listener);
         vistaEmpleado.buttonAnyadirClientesEmpleado.addActionListener(listener);
-        vistaEmpleado.generarFacturaButton.addActionListener(listener);
+        vistaEmpleado.verVentasEnPDFButton.addActionListener(listener);
+
 
         vistaCliente.darDeBajaButton.addActionListener(listener);
         vistaCliente.itemCerrarSesion.addActionListener(listener);
@@ -610,9 +611,17 @@ public class Controlador implements ActionListener, ListSelectionListener {
                 vistaCliente.dispose();
             }
             break;
-            case "factura": {
+            case "datosempleados": {
                 try {
-                    generarFactura.generarFactura(modelo);
+                    generarReporte.generarReporte(modelo);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+            }
+            break;
+            case "ventasPorEmpleado": {
+                try {
+                    generarReporte.generarReporte2(modelo);
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }

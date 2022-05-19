@@ -2,14 +2,17 @@ package com.jorgemartinezruiz.gui;
 
 import com.jorgemartinezruiz.enums.UsuariosLogin;
 
+import javax.help.HelpBroker;
+import javax.help.HelpSet;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.net.URL;
 import java.sql.SQLException;
 
 public class LoginDialog extends JFrame{
 
     private JPanel panel1;
-
     public JLabel lblUsuario;
     public JLabel lblContrasena;
     public JTextField txtUsuarioLogin;
@@ -37,6 +40,7 @@ public class LoginDialog extends JFrame{
 
         setComboBox();
         setMenu();
+        ponLaAyuda();
     }
 
     private void setComboBox() {
@@ -66,4 +70,25 @@ public class LoginDialog extends JFrame{
         this.setJMenuBar(mbBar);
     }
 
+    private void ponLaAyuda() {
+        try {
+            // Carga el fichero de ayuda
+            File fichero = new File("src\\javahelpaseguradora\\help\\help_set.hs");
+            //File fichero = new File("src"+File.separator+"pruebajavahelp\\help\\help_set.hs");
+            URL hsURL = fichero.toURI().toURL();
+
+            // Crea el HelpSet y el HelpBroker
+            HelpSet helpset = new HelpSet(getClass().getClassLoader(), hsURL);
+            HelpBroker hb = helpset.createHelpBroker();
+
+            // Pone ayuda a item de menu al pulsarlo y a F1 en ventana
+            // manual e instalar.
+            hb.enableHelpOnButton(itemAyuda, "login", helpset);
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

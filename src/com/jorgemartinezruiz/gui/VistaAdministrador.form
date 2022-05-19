@@ -42,8 +42,6 @@
             <colspec value="fill:161px:noGrow"/>
             <colspec value="left:5dlu:noGrow"/>
             <colspec value="fill:360px:noGrow"/>
-            <colspec value="left:10dlu:noGrow"/>
-            <colspec value="fill:30px:noGrow"/>
             <constraints>
               <tabbedpane title="Empleados"/>
             </constraints>
@@ -148,6 +146,16 @@
                   </component>
                 </children>
               </scrollpane>
+              <component id="91f87" class="javax.swing.JButton" binding="mostrarEnPDFButton" default-binding="true">
+                <constraints>
+                  <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="datosempleados"/>
+                  <text value="Mostrar en PDF"/>
+                </properties>
+              </component>
             </children>
           </grid>
           <grid id="f3e7" binding="panelClientesAdmin" layout-manager="FormLayout">
