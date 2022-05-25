@@ -7,43 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27df4409-82d4-4fce-9e3a-020aee19b263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/JavaHelpSearch/POSITIONS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/JavaHelpSearch/TMAP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/help_set.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/html/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/html/cliente.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/html/empleado.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/html/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/html/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/indice.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/map_file.jhm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TFG/javahelpaseguradora/help/toc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportes/Empleados.jrxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportes/Ventasporempleado.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_collections4_4_4_sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections4_4_4_sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TFG_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TFG_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TFG_jar/TFG.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TFG_jar/TFG.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TFG/META-INF/TFG.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/generarFactura/GenerarFactura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/Controlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/LoginDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/LoginDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/Modelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/Modelo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/VistaAdministrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/VistaAdministrador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/VistaCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/VistaCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/VistaEmpleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/com/jorgemartinezruiz/gui/VistaEmpleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/facturas/ReporteVentas.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/facturas/VentasReport.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf/Factura.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/generarFactura/GenerarFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/generarReporte/GenerarReporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/LoginDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/LoginDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Modelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaAdministrador.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaAdministrador.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaAdministrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaEmpleado.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaEmpleado.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/VistaEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/facturas/ReporteVentas.jrxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/facturas/VentasReport.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TFG/reportes/Empleados.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/reportes/Empleados.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TFG/reportes/Ventasporempleado.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/reportes/Ventasporempleado.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf/Empleados.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/pdf/Empleados.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf/VentasPorEmpleado.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/pdf/VentasPorEmpleado.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportes/Empleados.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportes/Ventasporempleado.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/Ventasporempleado.jrxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,25 +70,25 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reportes" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.hocon.settings.HoconProjectSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\TFG2022\TFG\src\reportes" />
+      <recent name="C:\TFG2022\TFG\src" />
+      <recent name="C:\TFG\src\com\jorgemartinezruiz\res" />
+      <recent name="C:\TFG\facturas" />
+      <recent name="C:\TFG\src\facturas" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\TFG2022\TFG\src\reportes" />
       <recent name="C:\TFG2022\TFG\src\facturas" />
       <recent name="C:\TFG2022\TFG\src" />
       <recent name="C:\TFG\src\facturas" />
       <recent name="C:\TFG\facturas" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\TFG2022\TFG\src" />
-      <recent name="C:\TFG\src\com\jorgemartinezruiz\res" />
-      <recent name="C:\TFG\facturas" />
-      <recent name="C:\TFG\src\facturas" />
-      <recent name="C:\TFG" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -200,7 +173,13 @@
       <workItem from="1652338731489" duration="7494000" />
       <workItem from="1652362574348" duration="1693000" />
       <workItem from="1652814944384" duration="1954000" />
-      <workItem from="1652964947726" duration="5431000" />
+      <workItem from="1652964947726" duration="6194000" />
+      <workItem from="1653242845522" duration="984000" />
+      <workItem from="1653328934407" duration="2413000" />
+      <workItem from="1653419726985" duration="3875000" />
+      <workItem from="1653424503269" duration="805000" />
+      <workItem from="1653425324196" duration="212000" />
+      <workItem from="1653497026685" duration="1096000" />
     </task>
     <servers />
   </component>
@@ -219,5 +198,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/jorgemartinezruiz/gui/Modelo.java</url>
+          <line>296</line>
+          <properties class="com.jorgemartinezruiz.gui.Modelo" method="consultarMisServicios">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

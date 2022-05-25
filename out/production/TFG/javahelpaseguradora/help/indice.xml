@@ -1,7 +1,0 @@
-<index version="1.0">
-		<indexitem text="Principal" target="main"/>
-		<indexitem text="Administrador" target="admin"/>
-     	        <indexitem text="Cliente"    target="cliente"/>
-      	        <indexitem text="Empleado"    target="empleado"/>
-		<indexitem text="Login"    target="login"/>
-</index>

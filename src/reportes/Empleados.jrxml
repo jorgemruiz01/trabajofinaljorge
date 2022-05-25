@@ -49,6 +49,10 @@ FROM empleados]]>
 		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
+	<variable name="totalEmpleados" class="java.math.BigDecimal" calculation="Count">
+		<variableExpression><![CDATA[$F{idempleado}]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
 	<group name="idempleado">
 		<groupExpression><![CDATA[$F{idempleado}]]></groupExpression>
 	</group>
@@ -152,7 +156,7 @@ FROM empleados]]>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="40" splitType="Immediate">
+		<band height="55" splitType="Immediate">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField>
 				<reportElement x="0" y="10" width="80" height="30" uuid="64bd5a24-7b57-48e4-80d7-0bf902d2b708">
@@ -197,11 +201,22 @@ FROM empleados]]>
 		</band>
 	</detail>
 	<summary>
-		<band height="62" splitType="Stretch">
+		<band height="82" splitType="Stretch">
 			<textField>
-				<reportElement positionType="FixRelativeToBottom" x="530" y="20" width="40" height="30" uuid="921ee780-236e-4465-abe7-ee97affcb633"/>
+				<reportElement positionType="FixRelativeToBottom" x="520" y="41" width="40" height="30" uuid="921ee780-236e-4465-abe7-ee97affcb633"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
+			<textField>
+				<reportElement x="130" y="41" width="30" height="30" uuid="6ddf526f-1ee6-46ff-b958-82e74223ecfd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{totalEmpleados}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="40" width="100" height="30" uuid="8c2146f8-1f91-4d14-8668-13ef6713fdc2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Total de empleados:]]></text>
+			</staticText>
 		</band>
 	</summary>
 </jasperReport>

@@ -1,8 +1,0 @@
-<toc version="1.0"> 
-		<tocitem text="Principal" target="main">
-		<tocitem text="Admin"    target="admin" />
-		<tocitem text="Cliente"    target="cliente" />
-		<tocitem text="Empleado"    target="empleado"/>
-		<tocitem text="Login"    target="login"/>
-	</tocitem>
-</toc>
