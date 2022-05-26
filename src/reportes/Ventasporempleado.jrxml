@@ -2,9 +2,7 @@
 <!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ventasporempleado" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c867787f-2b3e-471c-8354-2c2b1d5f4f3f">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="TFG Aseguradora Jorge"/>
-	<property name="com.jaspersoft.studio.data.sql.tables" value="YmJkZGFzZWd1cmFkb3JhdGZnLnZlbnRhcyAsMTUsMTUsNDM0Y2Q5ZjctZDllNC00ZDFmLWFjNjgt
-ODI2ZDhjN2YyNTY3O2JiZGRhc2VndXJhZG9yYXRmZy5lbXBsZWFkb3MgLDIyNiwyNjIsMWJkNmVi
-YmUtNzY2OC00ODY0LTlkMDEtNzBhZDFlMmFkYjlkOw=="/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="YmJkZGFzZWd1cmFkb3JhdGZnLnZlbnRhcyAsMTUsMTUsNDM0Y2Q5ZjctZDllNC00ZDFmLWFjNjgt ODI2ZDhjN2YyNTY3O2JiZGRhc2VndXJhZG9yYXRmZy5lbXBsZWFkb3MgLDIyNiwyNjIsMWJkNmVi YmUtNzY2OC00ODY0LTlkMDEtNzBhZDFlMmFkYjlkOw=="/>
 	<queryString>
 		<![CDATA[SELECT bbddaseguradoratfg.ventas.idventa,
 	bbddaseguradoratfg.ventas.precio,
@@ -118,9 +116,9 @@ FROM bbddaseguradoratfg.ventas
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="-3" y="40" width="560" height="68" uuid="6e80ebc6-eaca-4a63-a983-0c7ac5016858"/>
+				<reportElement mode="Opaque" x="-20" y="40" width="595" height="68" forecolor="#3639F5" backcolor="rgba(111, 236, 252, 0.18431373)" uuid="6e80ebc6-eaca-4a63-a983-0c7ac5016858"/>
 				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" size="50"/>
+					<font fontName="SansSerif" size="50"/>
 				</textElement>
 				<text><![CDATA[Ventas por empleado]]></text>
 			</staticText>
@@ -136,7 +134,7 @@ FROM bbddaseguradoratfg.ventas
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" size="13" isBold="true"/>
+					<font fontName="SansSerif" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ID VENTA]]></text>
 			</staticText>
@@ -145,7 +143,7 @@ FROM bbddaseguradoratfg.ventas
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" size="13" isBold="true"/>
+					<font fontName="SansSerif" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PRECIO]]></text>
 			</staticText>
@@ -154,7 +152,7 @@ FROM bbddaseguradoratfg.ventas
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" size="13" isBold="true"/>
+					<font fontName="SansSerif" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[FECHA DE VENTA]]></text>
 			</staticText>
@@ -163,7 +161,7 @@ FROM bbddaseguradoratfg.ventas
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font fontName="DejaVu Serif" size="13" isBold="true"/>
+					<font fontName="SansSerif" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ID CLIENTE]]></text>
 			</staticText>
@@ -183,7 +181,7 @@ FROM bbddaseguradoratfg.ventas
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b2cbc41-a934-4ff3-bfac-da1abe8ceca4"/>
 				</reportElement>
 				<textElement textAlignment="Center"/>
-				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{precio} + " eur."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="345" y="6" width="82" height="30" uuid="28946af6-c3d6-49b7-9830-50d8f64a7958">
@@ -201,35 +199,39 @@ FROM bbddaseguradoratfg.ventas
 			</textField>
 		</band>
 	</detail>
-	<summary>
-		<band height="111" splitType="Stretch">
+	<pageFooter>
+		<band height="50">
 			<textField>
-				<reportElement positionType="FixRelativeToBottom" x="530" y="81" width="40" height="30" uuid="7ee04728-2215-4648-b169-51ee7205a85f"/>
+				<reportElement positionType="FixRelativeToBottom" x="530" y="20" width="40" height="30" uuid="7ee04728-2215-4648-b169-51ee7205a85f"/>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="109" splitType="Stretch">
 			<textField>
-				<reportElement x="150" y="30" width="50" height="30" uuid="01dfd69b-4d16-4aeb-ab9e-1ca41f4ddee4"/>
+				<reportElement x="345" y="50" width="94" height="30" uuid="01dfd69b-4d16-4aeb-ab9e-1ca41f4ddee4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$V{SumaVentas}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$V{SumaVentas} + " eur."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="10" y="30" width="140" height="30" uuid="29aa8292-626e-4496-b4b4-cd65b007001d"/>
+				<reportElement x="320" y="10" width="140" height="30" uuid="29aa8292-626e-4496-b4b4-cd65b007001d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Suma total de las ventas:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="467" y="30" width="23" height="30" uuid="5dc5cc5f-320b-4730-a135-a3a531f0c82f"/>
+				<reportElement x="160" y="50" width="23" height="30" uuid="5dc5cc5f-320b-4730-a135-a3a531f0c82f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{totalVentas}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="390" y="30" width="75" height="30" uuid="9a8fa0a7-194e-45c5-92a6-750fcc8bb257"/>
+				<reportElement x="134" y="10" width="75" height="30" uuid="9a8fa0a7-194e-45c5-92a6-750fcc8bb257"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>

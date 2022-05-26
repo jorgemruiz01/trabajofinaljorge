@@ -7,15 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27df4409-82d4-4fce-9e3a-020aee19b263" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/libs/jh.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jhall.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jhbasic.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jsearch.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/TFG_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TFG_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TFG_jar/TFG.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TFG_jar/TFG.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/META-INF/TFG.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/reportes/Empleados.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/reportes/Empleados.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TFG/reportes/Ventasporempleado.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TFG/reportes/Ventasporempleado.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facturas/ReporteVentas.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/facturas/VentasReport.jrxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pdf/Empleados.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/pdf/Empleados.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf/VentasPorEmpleado.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/pdf/VentasPorEmpleado.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportes/Empleados.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportes/Empleados.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/Empleados.jrxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reportes/Ventasporempleado.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/Ventasporempleado.jrxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,27 +69,27 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="372" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reportes" />
+    <property name="last_opened_file_path" value="C:/TFG2022 - copia/TFG" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.hocon.settings.HoconProjectSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\TFG2022\TFG\libs" />
+      <recent name="C:\TFG2022\TFG\src\reportes" />
+      <recent name="C:\TFG2022\TFG\src\facturas" />
+      <recent name="C:\TFG2022\TFG\src" />
+      <recent name="C:\TFG\src\facturas" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\TFG2022\TFG\src\reportes" />
       <recent name="C:\TFG2022\TFG\src" />
       <recent name="C:\TFG\src\com\jorgemartinezruiz\res" />
       <recent name="C:\TFG\facturas" />
       <recent name="C:\TFG\src\facturas" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\TFG2022\TFG\src\reportes" />
-      <recent name="C:\TFG2022\TFG\src\facturas" />
-      <recent name="C:\TFG2022\TFG\src" />
-      <recent name="C:\TFG\src\facturas" />
-      <recent name="C:\TFG\facturas" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -179,7 +180,13 @@
       <workItem from="1653419726985" duration="3875000" />
       <workItem from="1653424503269" duration="805000" />
       <workItem from="1653425324196" duration="212000" />
-      <workItem from="1653497026685" duration="1096000" />
+      <workItem from="1653497026685" duration="1393000" />
+      <workItem from="1653499030984" duration="151000" />
+      <workItem from="1653499882620" duration="801000" />
+      <workItem from="1653500987419" duration="21000" />
+      <workItem from="1653501102877" duration="138000" />
+      <workItem from="1653501345999" duration="46000" />
+      <workItem from="1653583100058" duration="486000" />
     </task>
     <servers />
   </component>
