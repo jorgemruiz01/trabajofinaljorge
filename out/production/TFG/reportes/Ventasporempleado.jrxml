@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ventasporempleado" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c867787f-2b3e-471c-8354-2c2b1d5f4f3f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="TFG Aseguradora Jorge"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="YmJkZGFzZWd1cmFkb3JhdGZnLnZlbnRhcyAsMTUsMTUsNDM0Y2Q5ZjctZDllNC00ZDFmLWFjNjgt ODI2ZDhjN2YyNTY3O2JiZGRhc2VndXJhZG9yYXRmZy5lbXBsZWFkb3MgLDIyNiwyNjIsMWJkNmVi YmUtNzY2OC00ODY0LTlkMDEtNzBhZDFlMmFkYjlkOw=="/>
+	<queryString>
+		<![CDATA[SELECT bbddaseguradoratfg.ventas.idventa,
+	bbddaseguradoratfg.ventas.precio,
+	bbddaseguradoratfg.ventas.empleados_idempleado,
+	bbddaseguradoratfg.ventas.servicios_idservicio,
+	bbddaseguradoratfg.ventas.clientes_idcliente,
+	bbddaseguradoratfg.ventas.fecha,
+	bbddaseguradoratfg.empleados.idempleado,
+	bbddaseguradoratfg.empleados.nombre,
+	bbddaseguradoratfg.empleados.apellido
+FROM bbddaseguradoratfg.ventas
+	INNER JOIN bbddaseguradoratfg.empleados ON 
+	 bbddaseguradoratfg.ventas.empleados_idempleado = bbddaseguradoratfg.empleados.idempleado]]>
+	</queryString>
+	<field name="idventa" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idventa"/>
+		<property name="com.jaspersoft.studio.field.label" value="idventa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="precio" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="precio"/>
+		<property name="com.jaspersoft.studio.field.label" value="precio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empleados_idempleado" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="empleados_idempleado"/>
+		<property name="com.jaspersoft.studio.field.label" value="empleados_idempleado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="servicios_idservicio" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="servicios_idservicio"/>
+		<property name="com.jaspersoft.studio.field.label" value="servicios_idservicio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clientes_idcliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="clientes_idcliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="clientes_idcliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idempleado" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idempleado"/>
+		<property name="com.jaspersoft.studio.field.label" value="idempleado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellido" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellido"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="empleados_idempleado"/>
+	<variable name="SumaVentas" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[Integer.parseInt($F{precio})]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="totalVentas" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{idventa}]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<group name="ventasporempleado">
+		<groupExpression><![CDATA[$F{empleados_idempleado}]]></groupExpression>
+		<groupHeader>
+			<band height="31">
+				<textField>
+					<reportElement x="-20" y="4" width="50" height="16" uuid="4ff8ee07-dd10-4424-8ea9-7169d2fb2b46"/>
+					<textElement textAlignment="Right">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{empleados_idempleado}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="40" y="5" width="100" height="14" uuid="e9a2f807-d485-4465-a6ba-b9a42ab995c7"/>
+					<textElement textAlignment="Center">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="108" splitType="Stretch">
+			<staticText>
+				<reportElement x="420" y="0" width="130" height="30" uuid="45010666-4812-4dfa-abc6-7c23c22fa1b8"/>
+				<text><![CDATA[Aseguradora Jorge Martínez ]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="0" width="100" height="30" uuid="ddca9276-8374-42bb-ab93-86db9612c688"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="-20" y="40" width="595" height="68" forecolor="#3639F5" backcolor="rgba(111, 236, 252, 0.18431373)" uuid="6e80ebc6-eaca-4a63-a983-0c7ac5016858"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="50"/>
+				</textElement>
+				<text><![CDATA[Ventas por empleado]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="20" width="90" height="30" uuid="d6356e26-2666-4c6f-b1aa-0f9e553d9190">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID VENTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="20" width="90" height="30" uuid="25494dbc-87b8-4da6-bacc-7ae5fceb1829">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRECIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="20" width="90" height="40" uuid="88ab95bb-4bb7-4dff-aac2-c4a252536fa9">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA DE VENTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="20" width="90" height="30" uuid="ab916094-3c6d-417e-96ab-cdc3ebbe202d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID CLIENTE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="145" y="6" width="80" height="30" uuid="9145c94a-8e6f-41b2-a746-4a7f80222072">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7cb46a4f-4a22-490e-9b52-afe55648a2c0"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{idventa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="6" width="82" height="30" uuid="afb489d5-83b0-40e9-b6f1-d003e3ab76c4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b2cbc41-a934-4ff3-bfac-da1abe8ceca4"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{precio} + " eur."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="6" width="82" height="30" uuid="28946af6-c3d6-49b7-9830-50d8f64a7958">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3e41d1a-c3ed-4877-8203-07f0b821cfd4"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="6" width="80" height="30" uuid="c8eb4b90-8bec-415e-b3c4-56c2a4128383">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7a93c3bc-014d-4bf8-8775-8fd3a3035615"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{clientes_idcliente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement positionType="FixRelativeToBottom" x="530" y="20" width="40" height="30" uuid="7ee04728-2215-4648-b169-51ee7205a85f"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="109" splitType="Stretch">
+			<textField>
+				<reportElement x="345" y="50" width="94" height="30" uuid="01dfd69b-4d16-4aeb-ab9e-1ca41f4ddee4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SumaVentas} + " eur."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="320" y="10" width="140" height="30" uuid="29aa8292-626e-4496-b4b4-cd65b007001d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Suma total de las ventas:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="50" width="23" height="30" uuid="5dc5cc5f-320b-4730-a135-a3a531f0c82f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{totalVentas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="134" y="10" width="75" height="30" uuid="9a8fa0a7-194e-45c5-92a6-750fcc8bb257"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Total ventas:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

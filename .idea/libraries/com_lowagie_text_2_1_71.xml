@@ -1,0 +1,37 @@
+<component name="libraryTable">
+  <library name="com.lowagie.text-2.1.71">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections-3.2.1-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jasperreports-6.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jasperreports-6.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jasperreports-functions-6.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jcommon-xml-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jgoodies-common-1.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jgoodies-forms-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jh.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jhall.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jhbasic.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/joda-time-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jsearch.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/LGoodDatePicker-10.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mysql-connector-java-5.1.47.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mysql-connector-java-8.0.22.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections4-4.4-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
